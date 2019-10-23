@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/img/スクリーンショット\ 2019-10-22\ 16.58.27.png);
+    background-size: cover;
+    background-attachment: fixed;
+}  
+.link {
+    display: flex;
+    justify-content: space-between;
+  
+}
+ul {
+    border: 2px solid black;
+    margin-right: 5%;
+}
+li {
+    font-size: 25px;
+}
+h2 {
+    font-size: 80px;
+    color: black;
+    margin-top: 2%;
+    margin-left: 15%
+}
+
+section {
+    margin-left: 18%;
+    /* text-align: center; */
+}
+
+span {
+    color: red;
+    font-size: 50px;
+    
+}
+
+p {
+    color: blue;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+.click {
+    position:relative;
+    max-width:500px;
+    width:100%;
+    height:auto;
+    border:solid 3px red;
+}
+.fx2 {
+    max-width:450px;
+    background-color: red;
+    color:white;
+    padding:3px 10px;
+    font-weight:bold;
+    overflow:visible;
+}
+
+.checkedexample input {
+    display: none;
+}
+
+.checkedexample .appear {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.checkedexample input:checked ~ .appear {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
